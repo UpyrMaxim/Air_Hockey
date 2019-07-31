@@ -1,0 +1,9 @@
+#define BALL_SIZE 30
+#define PLAYER_SIZE 50
+#define WINDOW_W 550
+#define WINDOW_H 750
+#define SCORE_PANEL_H 50
+#define SPEED 300
+#define ATTENUATION_COEFFICIENT 0.7
+#define BUFFER_DISTANCE 5
+#define FPS 50

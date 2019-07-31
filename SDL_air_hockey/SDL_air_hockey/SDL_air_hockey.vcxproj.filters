@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\img">
+      <UniqueIdentifier>{74204339-a038-4513-8c33-074b80009a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameLogic">
+      <UniqueIdentifier>{2cf0d71d-072d-433c-8c1d-5db5933aeb43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameLogic">
+      <UniqueIdentifier>{fec91548-0e9f-4ae8-934d-bc4566544c53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainEntities">
+      <UniqueIdentifier>{fa363496-b09f-490a-bea4-3fe0d4bf1977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MainEntities">
+      <UniqueIdentifier>{0905c21d-a4a4-4684-8c83-918a9947f6d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\audio">
+      <UniqueIdentifier>{7399398e-cc4a-4bc4-b184-40b2b00e066b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Constants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BallLogic.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="AIPlayer.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicGameObject.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerLogic.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="ScorePanel.cpp">
+      <Filter>Source Files\MainEntities</Filter>
+    </ClCompile>
+    <ClCompile Include="InitSdl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio.cpp">
+      <Filter>Source Files\MainEntities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AIPlayer.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerLogic.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicGameObject.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="BallLogic.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="ScorePanel.h">
+      <Filter>Header Files\MainEntities</Filter>
+    </ClInclude>
+    <ClInclude Include="InitSdl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio.h">
+      <Filter>Header Files\MainEntities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Arena.bmp">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="Player.bmp">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="AI.bmp">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="Ball.bmp">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="ScorePanel.bmp">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Rebound.wav">
+      <Filter>Resource Files\audio</Filter>
+    </Media>
+    <Media Include="Battle in the winter.mp3">
+      <Filter>Resource Files\audio</Filter>
+    </Media>
+    <Media Include="Goal.wav">
+      <Filter>Resource Files\audio</Filter>
+    </Media>
+    <Media Include="Hit.wav">
+      <Filter>Resource Files\audio</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
