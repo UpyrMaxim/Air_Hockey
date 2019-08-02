@@ -2,3 +2,5 @@
 x64/
 Debug/
 test/
+build/
+CMakeLists.txt.user
