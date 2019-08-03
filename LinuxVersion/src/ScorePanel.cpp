@@ -1,5 +1,5 @@
 #include "ScorePanel.h"
-
+#include <iostream>
 
 
 ScorePanel::ScorePanel(InitSdl * MainObj)
@@ -15,13 +15,14 @@ ScorePanel::ScorePanel(InitSdl * MainObj)
 int ScorePanel::makePlayerGoal(const char * player, int playerType)
 {
 	int fontsize = 50;
-	SDL_Color text_color = { 0,0,0 };
+    SDL_Color text_color = { 0,0,0};
 	std::string fontpath = "fonts/OpenSans-Regular.ttf";
 	std::string text = std::to_string(playerType ? ++AIScore : ++playerScore);
+
 	TTF_Font* font = TTF_OpenFont(fontpath.c_str(), fontsize);
 	SDL_Texture* ftexture;
 
-	if (font == NULL){
+    if (font == nullptr){
 		SDL_Log("Failed the load the font!\n SDL_TTF Error: : %s", TTF_GetError());
 		return 1;
 	}
@@ -30,7 +31,7 @@ int ScorePanel::makePlayerGoal(const char * player, int playerType)
 	SDL_Surface* text_surface = TTF_RenderText_Solid(font, text.c_str(), text_color);
 
 	// render the text surface
-	if (text_surface == NULL) 
+    if (text_surface == nullptr)
 	{
 		SDL_Log("Failed to render text surface!\n SDL_TTF Error: : %s", TTF_GetError());
 		return 1;

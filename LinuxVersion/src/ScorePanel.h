@@ -1,7 +1,7 @@
 #pragma once
 #include "InitSdl.h"
-#include "SDL.h"
-#include "SDL_ttf.h"
+#include "SDL2/SDL.h"
+#include "SDL2/SDL_ttf.h"
 #include <string>
 
 enum class PlayerType

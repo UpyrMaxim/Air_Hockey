@@ -73,8 +73,8 @@ int InitSdl::setTextureBySurface(const char * textureName, SDL_Surface & surface
 	{
 		SDL_Log("Need to initialize renderer");
 		return 1;
-	}
-	texturesMap[textureName] = std::unique_ptr<SDL_Texture, sdl_deleter>(SDL_CreateTextureFromSurface(renderer.get(), &surface), sdl_deleter());
+    }
+    texturesMap[textureName] = std::unique_ptr<SDL_Texture, sdl_deleter>(SDL_CreateTextureFromSurface(renderer.get(), &surface), sdl_deleter());
 	return 0;
 }
 

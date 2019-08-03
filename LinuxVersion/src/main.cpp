@@ -1,6 +1,6 @@
-#include "SDL.h"
+#include "SDL2/SDL.h"
 #include "InitSdl.h"
-#include "SDL_mixer.h"
+#include "SDL2/SDL_mixer.h"
 #include "BallLogic.h"
 #include "PlayerLogic.h"
 #include "Constants.cpp"
@@ -37,7 +37,6 @@ int main(int argc, char *argv[])
 	PlayerScore.w = 50;
 	PlayerScore.h = 30;
 
-	SDL_Rect Score;
 	InitSdl AirHockeyMain(SDL_INIT_AUDIO );
 	Audio AudioObject("audio/Battle in the winter.mp3");
 	bool success = !initGame(AirHockeyMain);
